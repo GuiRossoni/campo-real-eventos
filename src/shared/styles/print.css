@@ -1,0 +1,285 @@
+/* 🖨️ Folha de estilos de impressão e relatórios (folhas A4, listas de presença, certificados, crachás e etiquetas) */
+
+/* Folha A4 padrão para impressão */
+.a4-print-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  box-sizing: border-box;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Isolamento de folhas e etiquetas Pimaco (garante branco puro na impressão e na visualização) */
+.pimaco-isolated-sheet,
+.pimaco-isolated-sheet * {
+  background-color: transparent;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.pimaco-isolated-sheet {
+  background-color: #ffffff !important;
+}
+
+.pimaco-isolated-card {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.pimaco-label-card-content {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.pimaco-draw-number-badge {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+.pimaco-sheet-footer {
+  position: absolute;
+  bottom: 2.5mm;
+  right: 6mm;
+  font-size: 8px;
+  color: #9ca3af;
+  background-color: transparent;
+}
+
+/* 🖨️ Isolamento do modo escuro para documentos de impressão (sempre preto nítido sobre branco) */
+.dark #attendance-print-document,
+.dark #frequency-report-print-document,
+.dark #pimaco-print-document,
+.dark .pimaco-a4-sheet,
+.dark #printable-report-area,
+.dark #printable-workshop-report-area,
+.dark #print-area,
+.dark .force-white-print,
+.dark [data-printable="true"] {
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+.dark #attendance-print-document section,
+.dark #frequency-report-print-document section,
+.dark #pimaco-print-document section,
+.dark .pimaco-a4-sheet,
+.dark #printable-report-area section,
+.dark #printable-workshop-report-area section,
+.dark .force-white-print section {
+  background-color: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #000000 !important;
+}
+
+.dark #attendance-print-document .bg-white,
+.dark #frequency-report-print-document .bg-white,
+.dark #pimaco-print-document .bg-white,
+.dark .pimaco-a4-sheet .bg-white,
+.dark .pimaco-label-card,
+.dark #printable-report-area .bg-white,
+.dark #printable-workshop-report-area .bg-white,
+.dark .force-white-print .bg-white {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.dark #attendance-print-document .bg-gray-50,
+.dark #frequency-report-print-document .bg-gray-50,
+.dark #printable-report-area .bg-gray-50,
+.dark #printable-workshop-report-area .bg-gray-50,
+.dark #attendance-print-document .bg-gray-100,
+.dark #frequency-report-print-document .bg-gray-100,
+.dark #printable-report-area .bg-gray-100,
+.dark #attendance-print-document .bg-gray-200,
+.dark #frequency-report-print-document .bg-gray-200,
+.dark #attendance-print-document tr.bg-gray-100,
+.dark #frequency-report-print-document tr.bg-gray-100 {
+  background-color: #f3f4f6 !important;
+  color: #000000 !important;
+}
+
+.dark #attendance-print-document h1,
+.dark #attendance-print-document h2,
+.dark #attendance-print-document h3,
+.dark #attendance-print-document h4,
+.dark #attendance-print-document p,
+.dark #attendance-print-document span,
+.dark #attendance-print-document td,
+.dark #attendance-print-document th,
+.dark #frequency-report-print-document h1,
+.dark #frequency-report-print-document h2,
+.dark #frequency-report-print-document h3,
+.dark #frequency-report-print-document h4,
+.dark #frequency-report-print-document p,
+.dark #frequency-report-print-document span,
+.dark #frequency-report-print-document td,
+.dark #frequency-report-print-document th,
+.dark #printable-report-area p,
+.dark #printable-report-area span,
+.dark #printable-report-area td,
+.dark #printable-report-area th,
+.dark #printable-report-area div,
+.dark #printable-workshop-report-area div,
+.dark #printable-workshop-report-area td {
+  color: #000000 !important;
+}
+
+.dark #attendance-print-document .text-gray-500,
+.dark #attendance-print-document .text-gray-600,
+.dark #attendance-print-document .text-gray-700,
+.dark #attendance-print-document .text-gray-800,
+.dark #frequency-report-print-document .text-gray-500,
+.dark #frequency-report-print-document .text-gray-600,
+.dark #frequency-report-print-document .text-gray-700,
+.dark #frequency-report-print-document .text-gray-800 {
+  color: #374151 !important;
+}
+
+.dark #attendance-print-document .text-gray-400,
+.dark #frequency-report-print-document .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark #attendance-print-document .border-black,
+.dark #attendance-print-document th.border-black,
+.dark #attendance-print-document td.border-black,
+.dark #attendance-print-document tr.border-black,
+.dark #frequency-report-print-document .border-black,
+.dark #frequency-report-print-document th.border-black,
+.dark #frequency-report-print-document td.border-black,
+.dark #frequency-report-print-document tr.border-black {
+  border-color: #000000 !important;
+}
+
+.dark #attendance-print-document .border-gray-300,
+.dark #attendance-print-document .divide-gray-300 > :not([hidden]) ~ :not([hidden]),
+.dark #frequency-report-print-document .border-gray-300,
+.dark #frequency-report-print-document .divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #d1d5db !important;
+}
+
+.dark #attendance-print-document .border-b-2.border-black,
+.dark #frequency-report-print-document .border-b-2.border-black {
+  border-bottom-color: #000000 !important;
+}
+
+.dark #attendance-print-document tr:hover,
+.dark #frequency-report-print-document tr:hover {
+  background-color: transparent !important;
+}
+
+.dark #print-area {
+  background-color: #fffdf5 !important;
+  color: #221c0b !important;
+  border-color: rgba(161, 98, 7, 0.3) !important;
+}
+
+.dark #print-area .text-yellow-950 {
+  color: #422006 !important;
+}
+
+.dark #print-area .text-yellow-900 {
+  color: #713f12 !important;
+}
+
+.dark #print-area .text-yellow-800 {
+  color: #854d0e !important;
+}
+
+.dark #print-area .text-yellow-700 {
+  color: #a16207 !important;
+}
+
+.dark #print-area .text-gray-700,
+.dark #print-area .text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.dark #print-area .bg-white {
+  background-color: #ffffff !important;
+}
+
+/* 🖨️ Regras de impressão de mídia */
+@media print {
+  html, body {
+    background: white !important;
+    background-color: white !important;
+    color: black !important;
+    color-scheme: light !important;
+  }
+  body * {
+    visibility: hidden !important;
+  }
+  #attendance-print-document, #attendance-print-document *,
+  #frequency-report-print-document, #frequency-report-print-document *,
+  #printable-report-area, #printable-report-area *,
+  #printable-workshop-report-area, #printable-workshop-report-area *,
+  #print-area, #print-area * {
+    visibility: visible !important;
+  }
+  #attendance-print-document,
+  #frequency-report-print-document {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #attendance-print-document section,
+  #frequency-report-print-document section {
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 8mm 10mm !important;
+    min-height: 98vh;
+    background: white !important;
+    color: black !important;
+  }
+  #attendance-print-document section:last-child,
+  #frequency-report-print-document section:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+  #attendance-print-document tr,
+  #frequency-report-print-document tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  #printable-report-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+  }
+  #printable-workshop-report-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 11px !important;
+  }
+  .non-printable-element {
+    display: none !important;
+  }
+}

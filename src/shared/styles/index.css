@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@source "../../../index.html";
+@source "../../**/*.{ts,tsx,js,jsx,html}";
+@import "./theme-dark.css";
+@import "./print.css";
+@import "./scanner.css";
+@import "./components.css";

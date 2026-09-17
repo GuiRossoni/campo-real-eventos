@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon_CRE.ico" />
+    <link rel="shortcut icon" href="/favicon/favicon_CRE.ico" />
+    <title>Campo Real Eventos</title>
+    <meta name="description" content="Sistema completo para gerenciamento e inscrições de eventos acadêmicos institucionais." />
+    <meta property="og:title" content="Campo Real Eventos" />
+    <meta property="og:description" content="Sistema completo para gerenciamento e inscrições de eventos acadêmicos institucionais." />
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('campus_theme');
+          if (theme === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

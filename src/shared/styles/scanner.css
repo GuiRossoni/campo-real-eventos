@@ -1,0 +1,19 @@
+/* Animação e efeitos visuais do laser do scanner */
+@keyframes scannerLaser {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0.6;
+  }
+}
+
+.scanner-laser {
+  top: 50%;
+  animation: scannerLaser 2.2s ease-in-out infinite alternate;
+}

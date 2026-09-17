@@ -1,0 +1,309 @@
+/* 🌙 Regras de substituição de alta fidelidade do modo escuro */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 💡 Transições suaves ao alternar o tema */
+html, body, div, header, footer, select, input, textarea, button {
+  transition: background-color 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.dark body {
+  background-color: #0e0e11 !important; /* Plano de fundo profundo Zinc-950 */
+  color: #f4f4f5 !important;
+}
+
+/* Mapeia painéis e cartões brancos para o Zinc-900 premium */
+.dark .bg-white,
+.dark .bg-white\/95,
+.dark .bg-white\/90,
+.dark .bg-white\/80,
+.dark header.bg-white,
+.dark footer.bg-white,
+.dark div.bg-white,
+.dark section.bg-white {
+  background-color: #18181b !important;
+  border-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+/* Mapeia o plano de fundo dos contêineres principais da página */
+.dark .bg-\[\#F8F9FA\],
+.dark .bg-slate-50 {
+  background-color: #0e0e11 !important;
+}
+
+/* Mapeia elementos cinza para campos escuros em tons sutis de zinc */
+.dark .bg-gray-50,
+.dark .bg-gray-50\/50,
+.dark .bg-gray-50\/40,
+.dark .bg-gray-50\/30,
+.dark .bg-gray-50\/20,
+.dark .bg-gray-55,
+.dark .bg-gray-100,
+.dark .bg-gray-105,
+.dark .bg-gray-150,
+.dark .bg-gray-200,
+.dark .bg-gray-250,
+.dark .bg-slate-100 {
+  background-color: #27272a !important;
+  border-color: #3f3f46 !important;
+  color: #f4f4f5 !important;
+}
+
+/* Estados de foco ao passar o mouse nas visualizações de lista */
+.dark .hover\:bg-gray-50:hover, 
+.dark .hover\:bg-gray-50\/40:hover,
+.dark .hover\:bg-gray-50\/50:hover,
+.dark .hover\:bg-gray-100:hover,
+.dark .hover\:bg-slate-50:hover {
+  background-color: #2e2e33 !important;
+}
+
+/* Fundos de sobreposição personalizados para caixas de diálogo */
+.dark .bg-black\/40,
+.dark .bg-black\/50,
+.dark .bg-black\/75,
+.dark .bg-slate-900\/60 {
+  background-color: rgba(0, 0, 0, 0.78) !important;
+}
+
+/* 🟢 Emblemas de valores, métricas e indicadores de receitas em esmeralda e verde no modo escuro */
+.dark .bg-emerald-50,
+.dark .bg-emerald-50\/10,
+.dark .bg-emerald-50\/20,
+.dark .bg-emerald-50\/25,
+.dark .bg-emerald-50\/30,
+.dark .bg-emerald-50\/40,
+.dark .bg-emerald-50\/50,
+.dark .bg-emerald-100,
+.dark .bg-green-50,
+.dark .bg-green-50\/20,
+.dark .bg-green-50\/30,
+.dark .bg-green-50\/40,
+.dark .bg-green-50\/50,
+.dark .bg-green-100 {
+  background-color: rgba(6, 78, 59, 0.25) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  color: #34d399 !important;
+}
+
+.dark .text-green-500,
+.dark .text-green-600,
+.dark .text-green-700,
+.dark .text-green-800,
+.dark .text-emerald-550,
+.dark .text-emerald-600,
+.dark .text-emerald-650,
+.dark .text-emerald-700,
+.dark .text-emerald-750,
+.dark .text-emerald-800,
+.dark .text-emerald-850,
+.dark .text-emerald-950 {
+  color: #34d399 !important;
+}
+
+/* 🔴 Emblemas de despesas, métricas de déficit e indicadores de saídas em vermelho no modo escuro */
+.dark .bg-red-50,
+.dark .bg-red-50\/20,
+.dark .bg-red-50\/30,
+.dark .bg-red-50\/40,
+.dark .bg-red-50\/50,
+.dark .bg-red-55,
+.dark .bg-red-100 {
+  background-color: rgba(127, 29, 29, 0.25) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+  color: #f87171 !important;
+}
+
+.dark .text-red-500,
+.dark .text-red-600,
+.dark .text-red-650,
+.dark .text-red-700,
+.dark .text-red-800 {
+  color: #f87171 !important;
+}
+
+/* 🔵 Emblemas de status, indicadores de preços de eventos e adicionais de oficinas em azul e azul-celeste no modo escuro */
+.dark .bg-blue-50,
+.dark .bg-blue-50\/20,
+.dark .bg-blue-50\/30,
+.dark .bg-blue-50\/40,
+.dark .bg-blue-50\/50,
+.dark .bg-blue-55,
+.dark .bg-blue-100,
+.dark .bg-sky-50,
+.dark .bg-sky-100,
+.dark .bg-indigo-50,
+.dark .bg-indigo-50\/20,
+.dark .bg-indigo-50\/30,
+.dark .bg-indigo-50\/40,
+.dark .bg-indigo-50\/50,
+.dark .bg-indigo-100 {
+  background-color: rgba(30, 58, 138, 0.25) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+  color: #818cf8 !important;
+}
+
+.dark .text-blue-500,
+.dark .text-blue-600,
+.dark .text-blue-650,
+.dark .text-blue-700,
+.dark .text-blue-750,
+.dark .text-blue-800,
+.dark .text-blue-850,
+.dark .text-indigo-600,
+.dark .text-indigo-650,
+.dark .text-indigo-700,
+.dark .text-indigo-800,
+.dark .text-indigo-950 {
+  color: #818cf8 !important;
+}
+
+/* 🟡 Emblemas amarelos, âmbar e laranja no modo escuro */
+.dark .bg-yellow-50,
+.dark .bg-yellow-50\/30,
+.dark .bg-yellow-50\/50,
+.dark .bg-yellow-100,
+.dark .bg-amber-50,
+.dark .bg-amber-50\/30,
+.dark .bg-amber-50\/40,
+.dark .bg-amber-50\/50,
+.dark .bg-amber-100,
+.dark .bg-orange-50,
+.dark .bg-orange-50\/20,
+.dark .bg-orange-50\/30,
+.dark .bg-orange-50\/40,
+.dark .bg-orange-50\/50,
+.dark .bg-orange-100 {
+  background-color: rgba(120, 53, 15, 0.25) !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+  color: #fbbf24 !important;
+}
+
+.dark .text-yellow-600,
+.dark .text-yellow-700,
+.dark .text-yellow-800,
+.dark .text-amber-600,
+.dark .text-amber-700,
+.dark .text-amber-800,
+.dark .text-orange-600,
+.dark .text-orange-700,
+.dark .text-orange-800 {
+  color: #fbbf24 !important;
+}
+
+/* 🟣 Emblemas roxos e rosas no modo escuro */
+.dark .bg-purple-50,
+.dark .bg-purple-100,
+.dark .bg-pink-50,
+.dark .bg-pink-100 {
+  background-color: rgba(88, 28, 135, 0.35) !important;
+  border-color: rgba(168, 85, 247, 0.35) !important;
+  color: #c084fc !important;
+}
+
+.dark .text-purple-600,
+.dark .text-purple-700,
+.dark .text-purple-800,
+.dark .text-pink-600,
+.dark .text-pink-700,
+.dark .text-pink-800 {
+  color: #c084fc !important;
+}
+
+/* Elementos tipográficos principais */
+.dark .text-gray-950,
+.dark .text-gray-900,
+.dark .text-gray-855,
+.dark .text-gray-850,
+.dark .text-gray-805,
+.dark .text-gray-800,
+.dark .text-gray-750,
+.dark .text-gray-700,
+.dark .text-gray-650,
+.dark .text-gray-600,
+.dark .text-gray-550,
+.dark .text-gray-505,
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700 {
+  color: #f4f4f5 !important;
+}
+
+.dark .text-gray-500,
+.dark .text-gray-455,
+.dark .text-gray-450,
+.dark .text-gray-405,
+.dark .text-gray-400,
+.dark .text-gray-350,
+.dark .text-gray-300,
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #a1a1aa !important;
+}
+
+/* Entradas de texto, seleções múltiplas, áreas de texto e listas suspensas */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #18181b !important;
+  border-color: #3f3f46 !important;
+  color: #ffffff !important;
+}
+
+.dark input:disabled,
+.dark select:disabled,
+.dark textarea:disabled {
+  background-color: #27272a !important;
+  border-color: #27272a !important;
+  color: #71717a !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+/* Configuração das bordas do sistema */
+.dark .border-gray-350,
+.dark .border-gray-300,
+.dark .border-gray-250,
+.dark .border-gray-205,
+.dark .border-gray-200,
+.dark .border-gray-150,
+.dark .border-gray-100,
+.dark .border-slate-200,
+.dark .border-slate-150,
+.dark .border-emerald-100,
+.dark .border-emerald-150,
+.dark .border-emerald-200,
+.dark .border-emerald-250,
+.dark .border-blue-100,
+.dark .border-blue-150,
+.dark .border-blue-200,
+.dark .border-red-100,
+.dark .border-red-150,
+.dark .border-red-200,
+.dark .border-yellow-100,
+.dark .border-yellow-200,
+.dark .border-yellow-250 {
+  border-color: #27272a !important;
+}
+
+/* Layout da navegação e controles das subt abas */
+.dark .bg-white.shadow-sm,
+.dark .shadow-3xs.bg-white {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+}
+
+/* Garante que os contêineres de QR code permaneçam brancos para leitores de código de barras */
+.dark .qr-white-container,
+.dark [data-qr-container="true"] {
+  background-color: #ffffff !important;
+}
+
+/* Garante que as sobreposições do slide superior do carrossel tenham a aparência correta */
+.dark .swiper-slide,
+.dark .bg-gradient-to-t {
+  color: #ffffff !important;
+}
