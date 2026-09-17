@@ -4,7 +4,9 @@ Sistema completo para gestão de eventos acadêmicos, semanas temáticas integra
 
 **Desenvolveroes:**
 Anne Gabrielly Latchuk - engs-anneantunes@camporeal.edu.br
+
 Guilherme Rossoni - engs-guilhermerossoni@camporeal.edu.br
+
 **Coordenador da disciplina:**
 Gabriel Christopher Dall Pozzo - prof_gabrielpozzo@camporeal.edu.br
 
