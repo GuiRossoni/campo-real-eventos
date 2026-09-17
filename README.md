@@ -3,11 +3,13 @@
 Sistema completo para gestão de eventos acadêmicos, semanas temáticas integradas, minicursos, palestras, credenciamento QR Code, controle de presença e emissão de certificados com assinatura digital para o Centro Universitário Campo Real.
 
 **Desenvolveroes:**
+
 Anne Gabrielly Latchuk - engs-anneantunes@camporeal.edu.br
 
 Guilherme Rossoni - engs-guilhermerossoni@camporeal.edu.br
 
 **Coordenador da disciplina:**
+
 Gabriel Christopher Dall Pozzo - prof_gabrielpozzo@camporeal.edu.br
 
 ---
